@@ -1,5 +1,7 @@
 package memberOOP;
 
+import java.lang.reflect.Member;
+
 public class User {
     private String id;
     private String pass;
@@ -9,6 +11,18 @@ public class User {
     private String phoneNum;
     private String address;
     private String job;
+    private double height;
+    private double weight;
+    //카우프 지수에서 사용하는 생성자
+    public Member(double height,double weight){
+        this.height = height;
+        this.weight = weight;
+    }
+      //회원가입에서 사용하는 생성자
+
+    public User(String id, String pass, String password, String name,String idNum, String phoneNum, String address, String job ){
+        this.id = id; this.pass = pass; this.password = password; this.name = name; this.idNum = idNum; this.phoneNum = phoneNum; this.address = address; this.job = job;
+    }
 
 
     public void setId(String id){
@@ -34,6 +48,12 @@ public class User {
     }
     public void setJob(String job){
         this.job = job;
+    }
+    public void setWeight(){
+        this.weight = weight;
+    }
+    public void setHeight(){
+        this.height = height;
     }
 
 
@@ -62,8 +82,28 @@ public class User {
     public String getJob(){
         return this.job;
 
-
-
     }
+
+    public double getHeight() {
+        return height;
     }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", pass='" + pass + '\'' +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", idNum='" + idNum + '\'' +
+                ", phoneNum='" + phoneNum + '\'' +
+                ", address='" + address + '\'' +
+                ", job='" + job + '\'' +
+                '}';
+    }
+}
 
