@@ -3,14 +3,14 @@ package KaupOOP;
 
 
 
-import memberOOP.User;
+import memberOOP.Member;
 
 import java.util.Scanner;
 
 public class KaupView {
     static  String test;
     public static void main(String[] args) {
-        User user = new User();
+        Member member = new Member();
         Person person = new Person();
         Scanner sc = new Scanner(System.in);
 

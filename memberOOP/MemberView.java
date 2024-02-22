@@ -1,3 +1,4 @@
+/*
 package memberOOP;
 
 import java.util.Scanner;
@@ -30,11 +31,12 @@ public class MemberView {
 //
 //        System.out.println("직업 : ");
         //user.setJob(sc.next());
-        User user = new User(sc.next(), sc.next(), sc.next(), sc.next(), sc.next(), sc.next(), sc.next(), sc.next());
+        Member member = new Member (sc.next(), sc.next(), sc.next(), sc.next(), sc.next(), sc.next(), sc.next(), sc.next());
 
         System.out.println(user.toString());
 
     }
 
+*/
 
-}
+/*}*/
