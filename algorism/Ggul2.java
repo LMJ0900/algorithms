@@ -16,14 +16,17 @@ public class Ggul2 {
             arr[i]= sc.nextInt();
         }
         for(int i=1;i<arr.length;i++){
-            for(int j=2; j<arr.length; j++){
-                arr1[j]=b+arr[j];
-            }
                 a=a+arr[i];
+        }
+        for(int i=0;i<arr.length; i++){
+
+            for(int j=i;j<arr.length;j++){
+                b=b+arr[j];
+            }
+
         }
         for(int i=2; i<arr.length; i++){
         b=a-arr[i]+arr1[i];
-
         }
 
 
